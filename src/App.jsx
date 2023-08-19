@@ -30,6 +30,12 @@ function App() {
   if (error) {
     toast.error(error.message);
   }
+  const EVN_TYPE = import.meta.env.MODE;
+  const DEV_URL = import.meta.env.VITE_BASE_DEV;
+  const PROD_URL = import.meta.env.VITE_BASE_PROD;
+
+  const BaseUrl = EVN_TYPE === 'development' ? DEV_URL : PROD_URL;
+  console.log('BaseUrl: ', BaseUrl);
 
   return (
     <>
