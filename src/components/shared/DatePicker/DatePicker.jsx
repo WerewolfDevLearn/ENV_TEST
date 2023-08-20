@@ -29,7 +29,7 @@ export function DatePicker({ labelTex }) {
     <>
       <DatepickerContext.Provider value={setSelectedDate}>
         <div className="datepicker-wrapper">
-          <InputDate inputValue={inputValue} onClickHandler={onClickHandler} labelTex={labelTex} />
+          <InputDate inputValue={inputValue} onClickHandler={onClickHandler} labelTex="text" />
 
           {show && (
             <Modal onClose={closeModal} clickable={true} color="transparent">

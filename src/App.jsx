@@ -39,6 +39,7 @@ function App() {
 
   return (
     <>
+      <h1>{EVN_TYPE}</h1>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route element={<PubliceRourtes />}>
