@@ -36,6 +36,8 @@ function App() {
 
   const BaseUrl = EVN_TYPE === 'development' ? DEV_URL : PROD_URL;
   console.log('BaseUrl: ', BaseUrl);
+  console.log('BaseUrl: ', BaseUrl);
+  console.log('BaseUrl: ', BaseUrl);
 
   return (
     <>
